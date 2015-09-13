@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'D:\Programas\Xampp\htdocs\AndroidGoes\wine-is-fine\app/config/routing_dev.yml'
