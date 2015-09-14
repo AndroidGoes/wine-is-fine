@@ -5,12 +5,13 @@
         <title>{% block title %}Wine is fine{% endblock %}</title>
         {% block stylesheets %}
             <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link href="{{ asset('wine-is-fine.css') }}" rel="stylesheet">
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
         {% block navbar %}{{ include('navbar.html.twig')}}{% endblock %}
-        {% block body %}{% endblock %}
+        <div class="container-fluid">{% block body %}{% endblock %}</div>
         {% block javascripts %}
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
